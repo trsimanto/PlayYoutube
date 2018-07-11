@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#8c8c8c"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp"
+    android:translationZ="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        >
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        />
+    <TextView
+        android:background="#ffffff"
+        android:layout_margin="3dp"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:lineSpacingExtra="10dp"
+        android:layout_below="@id/youtube_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:text="You need to register your application, including your digitally signed .apk file's public certificate in the Google API Console, to be able to use the YouTube Android Player API. The following steps explain how to register your application and certificate as well as how to find your application's authorization credentials."/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+</RelativeLayout>
